@@ -1,0 +1,39 @@
+<section class="orders light-section">
+    <div class="flex justify-center">
+        <a href="/addproduct"><button
+            type="button"
+            class="rounded-md mx-4 bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+            >
+            Add Product
+            </button></a>
+            <a href="/viewproduct"><button
+            type="button"
+            class="rounded-md mx-4 bg-yellow-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+            >
+            View Products
+            </button></a>
+            <a href="/sales"><button
+            type="button"
+            class="rounded-md mx-4 bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+            >
+            Sales
+            </button></a>
+    </div>
+    <div class="container mx-auto pt-12">
+        <h1 class="text-2xl font-semibold mb-6">Manage Orders</h1>
+        <table class="w-full table-auto bg-white">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2 text-left">Orders</th>
+                    <th class="px-4 py-2 text-left">Customer</th>
+                    <th class="px-4 py-2 text-left">Address</th>
+                    <th class="px-4 py-2 text-left">status</th>
+                    <th class="px-4 py-2 text-left">Placed at</th>
+                    <th class="px-4 py-2 text-left">Payment Status</th>
+                </tr>
+            </thead>
+            <tbody id="orderTableBody">
+            </tbody>
+        </table>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<section>
+      <div class="flex items-center justify-center">
+        <a href="/admin/orders"><button
+          type="button"
+          class="rounded-md mx-4 bg-yellow-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+        >
+          Dashboard
+        </button></a>
+      </div>
+      <div class="container mx-auto py-12">
+    <h1 class="text-2xl font-semibold mb-6">Add Product</h1>
+    <form action="/addMenuItem" method="POST" enctype="multipart/form-data" class="max-w-md mx-auto bg-white shadow-md rounded px-8 py-6">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-bold mb-2">Product Name:</label>
+        <input type="text" id="productName" name="productName" required class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+      </div>
+      <div class="mb-4">
+        <label for="price" class="block text-gray-700 font-bold mb-2">Price:</label>
+        <input type="number" id="price" name="price" required class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+      </div>
+      <div class="mb-6">
+        <label for="image" class="block text-gray-700 font-bold mb-2">Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+      </div>
+      <div class="flex justify-center">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Add Product</button>
+      </div>
+    </form>
+  </div>
+</section>
